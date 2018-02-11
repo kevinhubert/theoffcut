@@ -1,0 +1,92 @@
+## 1.1.0
+* Set background for header navigation overlay
+* Fix syntax error in style.css
+* Remove deprecated function in WooCommerce
+* Replace FontAwesome icons with Genericons
+* Update WooCommerce Templates, compatible upto v3.3.1
+* Updated LayerSlider to v6.6.8
+* Updated Google Fonts
+
+## 1.0.15
+* Fixed UI issue with Quantity text on single shop pages
+* Updated LayerSlider to v6.6.5
+* Updated Google Fonts library
+
+## 1.0.14
+* Update WooCommerce templates to v3.2.0
+* Fix WooCommerce login forms showing incorrect titles on phone
+* Updated LayerSlider to v6.6.0
+* Updated Google Fonts library
+
+## 1.0.13
+* Fixed issue with product tabs not appearing on smalls screens
+* Updated LayerSlider to 6.5.5
+
+## 1.0.12
+* Update WooCommerce templates for v3.1.0
+* Fix in-stock text spacing on single page
+
+## 1.0.11
+* Fix out of stock badge and variable product button
+* Hide "QTY" text for products with only 1 items in stock since incremental numbers are not shown
+* Tweak Input field's placeholder color so it appears different from entered text
+* Fixed an issue where login reminder on checkout page didn't work as expected
+* Updated LayerSlider to v6.5.1
+
+## 1.0.10
+* Further tweaked WooCommerce Product slider
+* Fix checkout forms, where sometimes 'Create an account' checkout would appear overlapping
+* Fix scrolling on iPhones
+
+## 1.0.9
+* Fix Custom Featured Product widget not returning correct products in some cases
+* Fix translation path
+* Tweak mobile navigation
+* Tweak product page slider
+* Always use HTTPS for Google fonts
+* Updated LayerSlider to 6.4.0
+
+## 1.0.8
+* Updated compatibility with WooCommerce external products
+* Fix product review text when only logged in customers are allowed to post
+* Tweak footer styles and added live preview while customizing
+* Hide external button if settings (hide “add to cart” button) checked
+* Tweak styles for gallery single product
+* Fix entry meta styles showing an extra divider
+* Changed TGMPA options to make suggested plugins not required
+* Updated LayerSlider to 6.3.0
+
+## 1.0.7
+* Updated WooCommerce template as per WooCommerce 3.0.2
+* Better compatibility with child themes
+
+## 1.0.6
+* Updated WooCommerce template as per WooCommerce 3.0.1
+
+## 1.0.5
+* Compatible with WooCommerce 3.0.0
+* Tweak WC demo store notice text style
+* Added support for new WooCommerce product gallery
+* Updated outdated WC templates
+* Removed deprecated functions
+
+## 1.0.4
+* Fix product thumbnail slider on phones/tablets
+
+## 1.0.3
+* Fix an issue with overlapping buttons under mobile navigation
+
+## 1.0.2
+* Fixed an error when reviews are turned off for specific products
+* Changed default theme fonts
+* Vertically aligned Logo and Main Navigation
+* Added options to hide site title/description
+* Fixed an issue where Main menu's sub nav would appear under sliders in some cases
+* Tweaked Feature slide widget to allow to change text/link/alignment controls per widget/slide
+
+## 1.0.1
+* Added compatibility with Elementor (https://wordpress.org/plugins/elementor/)
+* Fixed sticky label live preview in customizer
+
+## 1.0.0
+* Initial release

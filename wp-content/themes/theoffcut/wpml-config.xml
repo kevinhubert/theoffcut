@@ -1,0 +1,14 @@
+<wpml-config>
+    <admin-texts>
+        <key name="theme_mods_atik">
+			<key name="mobile-menu-label" />
+			<key name="sticky-label" />
+			<key name="html-footer-text" />
+        </key>
+        <key name="theme_mods_atik-child">
+			<key name="mobile-menu-label" />
+			<key name="sticky-label" />
+			<key name="html-footer-text" />
+        </key>
+    </admin-texts>
+</wpml-config>
