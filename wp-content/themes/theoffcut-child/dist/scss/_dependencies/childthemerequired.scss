@@ -7,18 +7,16 @@ Author: Codestag
 Author URI: https://codestag.com/
 Template: TheOffcut
 */
+
 /* Required Wordpress Classes, don't remove these.
 -----------------------------------------------------------*/
 .aligncenter {
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
-
-.alignleft {
-  float: left; }
-
-.alignright {
-  float: right; }
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.alignleft { float: left; }
+.alignright { float: right; }
 
 /* Make all custom CSS changes BELOW this line
 -----------------------------------------------------------*/
@@ -27,5 +25,4 @@ Template: TheOffcut
 	background: blue;
 }
 */
-.custom-header-box {
-  display: none; }
+ 
