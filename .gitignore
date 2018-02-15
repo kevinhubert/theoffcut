@@ -2,6 +2,7 @@
 /*
 !wp-content/
 !package.json
+!gulpfile.js
 
 # ignore all files starting with .
 .*
