@@ -1,11 +1,13 @@
 // DEPENDENCIES
 @import '_dependencies/childthemerequired';
+@import '_base/variables';
+
 
 // OVERRIDES
 @import '_overrides/overrides';
 
 // BASE
-@import '_base/variables';
+@import '_base/helpers';
 
 // LAYOUT
 

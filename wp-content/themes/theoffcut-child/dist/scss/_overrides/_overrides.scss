@@ -3,7 +3,23 @@
     display: none;
 }
 
+// Globals / Cross site Stuff
+body {
+    background: $color-brand-secondary;
+}
+
 // Shopping cart hover modal
 .woocommerce-mini-cart__empty-message {
     padding-left: 28px;
+}
+
+// Header 
+.site-branding {
+    width: 15%;
+}
+.main-header {
+    padding: 30px 0; 
+}
+.navigation-wrap {
+    height: auto;
 }

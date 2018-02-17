@@ -36,18 +36,14 @@
 		<div class="main-header">
 			<div class="container">
 				<div class="site-branding">
-					<div class="site-title-container"> 
+					<div class="site-title-container">
 						<?php
 						if ( function_exists( 'the_custom_logo' ) && has_custom_logo() ) {
 							echo atik_get_logo(); // WPCS: XSS ok.
 						} else {
 							?>
 							<?php if ( false === atik_get_thememod_value( 'bool-hide-title-description' ) ) : ?>
-							<h1 class="site-title">
-								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-									<img src="/theoffcut/wp-content/uploads/2018/02/The_Offcut_logo_ideas.png" alt="">
-								</a>
-							</h1>
+							<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 							<?php endif; ?>
 							<?php
 						}
@@ -57,7 +53,7 @@
 
 							if ( $description || is_customize_preview() ) :
 								?>
-								<!-- <p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p> -->
+								<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
 							<?php endif; ?>
 						<?php endif; ?>
 
