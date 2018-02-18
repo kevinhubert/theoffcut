@@ -31,7 +31,7 @@ Template: TheOffcut
   display: none; }
 
 body {
-  background: #f6f6f6; }
+  background: #ffffff; }
 
 .woocommerce-mini-cart__empty-message {
   padding-left: 28px; }
@@ -39,11 +39,22 @@ body {
 .site-branding {
   width: 15%; }
 
+.site-description {
+  text-align: center; }
+
 .main-header {
   padding: 30px 0; }
 
 .navigation-wrap {
   height: auto; }
+
+.custom-header {
+  height: auto;
+  padding: 0; }
+
+.custom-header .wp-custom-header img {
+  position: static;
+  transform: none; }
 
 .flex {
   display: flex; }
