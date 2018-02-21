@@ -1,5 +1,7 @@
 // DEPENDENCIES
 @import '_dependencies/childthemerequired';
+
+@import '_dependencies/breakpoints';
 @import '_base/variables';
 
 
@@ -10,7 +12,11 @@
 @import '_base/helpers';
 
 // LAYOUT
+@import '_layout/l-banner';
+@import '_layout/l-header';
+@import '_layout/l-navigation';
 
 // COMPONENT
 
 // STATE
+@import '_state/overlays';

@@ -15,7 +15,7 @@ gulp.task('serve', ['sass'], function() {
     gulp.watch("wp-content/themes/theoffcut-child/dist/scss/*/*.scss", ['sass']);
     gulp.watch("wp-content/themes/theoffcut/*.php").on('change', browserSync.reload);
     gulp.watch("wp-content/themes/theoffcut-child/*.php").on('change', browserSync.reload);
-});
+    gulp.watch("wp-content/themes/theoffcut-child/*/*.php").on('change', browserSync.reload);});
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {

@@ -27,6 +27,14 @@ Template: TheOffcut
 	background: blue;
 }
 */
+/*
+.selector {
+  color: red;
+  
+  @include screen-size('small') {
+    color: blue;
+  }
+*/
 .custom-header-box {
   display: none; }
 
@@ -48,13 +56,85 @@ body {
 .navigation-wrap {
   height: auto; }
 
-.custom-header {
-  height: auto;
-  padding: 0; }
-
-.custom-header .wp-custom-header img {
-  position: static;
-  transform: none; }
-
 .flex {
   display: flex; }
+
+img {
+  max-width: 100%; }
+
+.l-banner {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  font-family: 'lato'; }
+
+.l-banner__text {
+  color: #ffffff;
+  width: 65%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-transform: uppercase;
+  transform: translate(-50%, -50%);
+  z-index: 1; }
+
+.l-banner__text--title {
+  font-size: 5rem;
+  line-height: 5rem;
+  font-weight: 700;
+  margin-bottom: 1rem; }
+
+.l-banner__text--subtitle {
+  font-size: 3rem;
+  font-weight: 100; }
+
+.home > .l-header {
+  height: 160px; }
+
+@media (min-width: 992px) {
+  .home > .l-header {
+    display: none; } }
+
+.custom-logo-link {
+  margin-right: 0; }
+
+.l-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  color: #ffffff; }
+
+.l-navigation__nav-left ul, .l-navigation__nav-right ul {
+  display: flex;
+  justify-content: space-between; }
+
+.l-navigation__nav-left li, .l-navigation__nav-right li {
+  list-style: none;
+  padding: 0 15px; }
+
+.l-navigation__nav-left a, .l-navigation__nav-right a {
+  color: #f6f6f6;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.l-navigation__nav-left a:hover, .l-navigation__nav-right a:hover {
+  border-bottom: 1px solid #f6f6f6; }
+
+.l-navigation__logo {
+  width: 150px;
+  margin: 0 50px; }
+
+.has-overlay {
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }

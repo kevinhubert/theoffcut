@@ -1,0 +1,9 @@
+.home > .l-header {
+    height: 160px;
+    @include screen-size('medium') {
+        display: none;
+    }
+}
+.custom-logo-link {
+    margin-right: 0;
+}

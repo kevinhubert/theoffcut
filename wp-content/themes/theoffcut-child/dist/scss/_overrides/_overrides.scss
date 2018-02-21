@@ -26,14 +26,3 @@ body {
 .navigation-wrap {
     height: auto;
 }
-// Banner Image / Container
-.custom-header {
-    height: auto;
-    padding: 0;
-    .wp-custom-header {
-        img {
-            position: static;
-            transform: none;
-        }
-    }
-}

@@ -1,0 +1,29 @@
+.l-banner {
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    font-family: 'lato';
+    &__text {
+        color: $color-brand-secondary;
+        width: 65%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-transform: uppercase;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        &--title {
+            font-size: 5rem;
+            line-height: 5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        &--subtitle {
+            font-size: 3rem;
+            font-weight: 100;
+        }
+    }
+}
