@@ -1,0 +1,33 @@
+.l-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    color: $color-brand-secondary;
+    &__nav-left,
+    &__nav-right {
+        ul {
+            display: flex;
+            justify-content: space-between;
+        }
+        li {
+            list-style: none;
+            padding: 0 15px;
+        }
+        a {
+            color: $color-brand-tertiary;
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            &:hover {
+                border-bottom: 1px solid $color-brand-tertiary;
+            }
+        }
+    }
+    &__logo {
+        width: 150px;
+        margin: 0 50px;
+    }
+}

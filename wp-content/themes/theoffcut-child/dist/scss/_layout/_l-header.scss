@@ -1,0 +1,15 @@
+.home > .l-header {
+    height: 160px;
+    @include screen-size('medium') {
+        display: none;
+    }
+}
+.home .l-homepage-content {
+    margin-top: calc(100vh - 200px);
+    position: relative;
+    z-index: 2;
+    background: $color-brand-secondary;
+}
+.custom-logo-link {
+    margin-right: 0;
+}
