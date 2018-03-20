@@ -9,7 +9,8 @@
 
 // Globals / Cross site Stuff
 body {
-    background: $color-brand-secondary;
+    // background: $color-brand-secondary;
+    overflow-x: hidden;
 }
 
 // Shopping cart hover modal
@@ -18,9 +19,6 @@ body {
 }
 
 // Header 
-.site-branding {
-    width: 15%;
-}
 .site-description {
     text-align: center;    
 }
@@ -29,4 +27,11 @@ body {
 }
 .navigation-wrap {
     height: auto;
+}
+.home .cart:hover > a {
+    color: $color-brand-primary!important;
+    transition-duration: 500ms;
+}
+.home .main-navigation .primary-menu > li:hover > a {
+    border-bottom-color: $color-brand-secondary!important;
 }

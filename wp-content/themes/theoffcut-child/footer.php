@@ -12,7 +12,6 @@
 ?>
 
 	</div><!-- #content -->
-</div>
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
 		<a id="footer-toggle" class="footer-toggle" href="javascript:void(0)">

@@ -10,7 +10,7 @@
 /**
  * The current version of the theme.
  */
-define( 'ATIK_VERSION', '1.1.0' );
+define( 'ATIK_VERSION', '1.1.1' );
 
 /**
  * The suffix to use for scripts.

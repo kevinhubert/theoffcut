@@ -2,21 +2,23 @@
 @import '_dependencies/childthemerequired';
 
 @import '_dependencies/breakpoints';
-@import '_base/variables';
+// @import '_base/variables';
 
 
-// OVERRIDES
-@import '_overrides/overrides';
+// // OVERRIDES
+// @import '_overrides/overrides';
 
-// BASE
-@import '_base/helpers';
+// // BASE
+// @import '_base/helpers';
 
-// LAYOUT
-@import '_layout/l-banner';
-@import '_layout/l-header';
-@import '_layout/l-navigation';
+// // LAYOUT
+// @import '_layout/l-banner';
+// @import '_layout/l-header';
+// @import '_layout/l-navigation';
 
-// COMPONENT
+// // COMPONENT
+// @import '_component/full-image';
+// @import '_component/text-callout';
 
-// STATE
-@import '_state/overlays';
+// // STATE
+// @import '_state/overlays';

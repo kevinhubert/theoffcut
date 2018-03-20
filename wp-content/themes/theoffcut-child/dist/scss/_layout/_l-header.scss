@@ -5,11 +5,50 @@
     }
 }
 .home .l-homepage-content {
-    margin-top: calc(100vh - 200px);
+    margin-top: calc(100vh - 165px);
     position: relative;
     z-index: 2;
     background: $color-brand-secondary;
 }
-.custom-logo-link {
-    margin-right: 0;
+
+// Logo and title
+.site-branding {
+    width: auto;
+}
+.site-title-container {
+    display: flex;
+    color: $color-brand-secondary;
+    &__logo {
+        margin-right: 20px;
+        width: 100px;
+    }
+    &__title {
+        text-transform: uppercase;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+        div:first-of-type {
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 30px;
+        }
+        div:last-of-type {
+            font-size: 1.5rem;
+            letter-spacing: 12px;
+        }
+    }
+}
+.navigation-wrap {
+    width: auto;
+}
+.home .main-navigation .primary-menu > li > a {
+    color: $color-brand-secondary;
+    &:hover {
+        color: $color-brand-tertiary;
+    }
+}
+.home .extra-menu .cart a {
+    color: $color-brand-secondary;
 }

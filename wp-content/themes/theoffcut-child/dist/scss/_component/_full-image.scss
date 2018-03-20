@@ -1,0 +1,27 @@
+.full-image {
+    height: 50vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $color-brand-secondary;
+    &__text {
+        text-align: center;
+        position: relative;
+        z-index: 9;
+        width: 90%;
+        div:first-of-type {
+            font-size: 3rem;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+        @include screen-size('medium') {
+            width: 50%;
+        }
+    }
+}

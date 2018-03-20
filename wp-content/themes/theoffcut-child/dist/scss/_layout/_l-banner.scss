@@ -1,7 +1,7 @@
 .l-banner {
     position: fixed;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     top: 0;
     left: 0;  
     z-index: 1;
@@ -22,14 +22,21 @@
             max-width: 700px;
         }
         &--title {
-            font-size: 4rem;
-            line-height: 4rem;
+            font-size: 2rem;
+            line-height: 2rem;
             font-weight: 700;
             margin-bottom: 1rem;
+            @include screen-size('medium') {
+                font-size: 4rem;
+                line-height: 4rem;
+            }
         }
         &--subtitle {
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-weight: 100;
+            @include screen-size('medium') {
+                font-size: 1.5rem;
+            }
         }
     }
 }

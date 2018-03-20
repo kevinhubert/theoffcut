@@ -1,3 +1,8 @@
+## 1.1.1
+* Compatible with WooCommerce v3.3.2
+* Tweak search results page
+* Hide store notice when menu is open
+
 ## 1.1.0
 * Set background for header navigation overlay
 * Fix syntax error in style.css

@@ -1,10 +1,10 @@
 /*
-Theme Name: TheOffcut
+Theme Name: Atik
 Theme URI: https://codestag.com/themes/atik/
 Author: Codestag
 Author URI: https://codestag.com/
 Description: Atik is an easy to setup and manage WooCommerce theme that brings layout flexibility with solid, consistent design and layout. Whether you sell only one, or hundreds of products, with Atik you will find a modular design system that works out of the box, and rock solid code that is developer friendly and following the best WordPress coding practices.
-Version: 1.1.0
+Version: 1.1.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: atik
@@ -1865,6 +1865,10 @@ a:active {
 
 .mobile-menu-open .menu-toggle i:before {
 	content: "\f406";
+}
+
+.mobile-menu-open .store-notice-container {
+	display: none;
 }
 
 .menu-toggle,
@@ -4803,6 +4807,7 @@ section .widget_search .search-submit {
 .search-results.posts .post-thumb {
 	float: left;
 	width: 80px;
+	min-height: 1px;
 }
 
 .search-results.products .product-desc,
@@ -4848,13 +4853,17 @@ section .widget_search .search-submit {
 	background: none;
 }
 
-.search-results.products .add_to_cart_button,
-.search-results.products .product_type_variable {
+.search-results.products .button {
 	float: right;
+	clear: both;
 	margin-top: 20px;
 	padding: 9px 18px;
 	font-size: 12px;
 	text-transform: uppercase;
+}
+
+.search-results.products .button + .button {
+	margin-top: 5px;
 }
 
 .search-results.posts li > .post-meta {

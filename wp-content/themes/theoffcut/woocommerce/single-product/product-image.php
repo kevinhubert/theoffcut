@@ -13,7 +13,7 @@
  * @see     https://docs.woocommerce.com/document/template-structure/
  * @author  WooThemes
  * @package WooCommerce/Templates
- * @version 3.1.0
+ * @version 3.3.2
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -27,13 +27,15 @@ $full_size_image   = wp_get_attachment_image_src( $post_thumbnail_id, $thumbnail
 $thumbnail_post    = get_post( $post_thumbnail_id );
 $image_title       = $thumbnail_post->post_content;
 $placeholder       = has_post_thumbnail() ? 'with-images' : 'without-images';
-$wrapper_classes   = apply_filters( 'woocommerce_single_product_image_gallery_classes', array(
-	'woocommerce-product-gallery',
-	'woocommerce-product-gallery--' . $placeholder,
-	'images',
-) );
+$wrapper_classes   = apply_filters(
+	 'woocommerce_single_product_image_gallery_classes', array(
+		 'woocommerce-product-gallery',
+		 'woocommerce-product-gallery--' . $placeholder,
+		 'images',
+	 )
+	);
 
-$has_gallery = false;
+$has_gallery    = false;
 $attachment_ids = $product->get_gallery_image_ids();
 if ( ! empty( $attachment_ids ) ) {
 	$has_gallery = true;
@@ -53,21 +55,23 @@ $loop = 0;
 				<div class="product-img slides">
 					<?php
 					foreach ( $attachment_ids as $attachment_id ) {
-						$url = wp_get_attachment_url( $attachment_id );
-						$image_title = esc_attr( get_the_title( $attachment_id ) );
+						$url           = wp_get_attachment_url( $attachment_id );
+						$image_title   = esc_attr( get_the_title( $attachment_id ) );
 						$image_caption = esc_attr( get_post_field( 'post_excerpt', $attachment_id ) );
 
-						$full_size_image   = wp_get_attachment_image_src( $attachment_id, 'full' );
+						$full_size_image = wp_get_attachment_image_src( $attachment_id, 'full' );
 
-						$image = wp_get_attachment_image( $attachment_id, apply_filters( 'single_product_small_thumbnail_size', 'shop_single' ), 0, $attr = array(
-								'title'                   => $image_title,
-								'alt'                     => $image_title,
-								'data-caption'            => get_post_field( 'post_excerpt', $post_thumbnail_id ),
-								'data-src'                => $full_size_image[0],
-								'data-large_image'        => $full_size_image[0],
-								'data-large_image_width'  => $full_size_image[1],
-								'data-large_image_height' => $full_size_image[2],
-						) );
+						$image = wp_get_attachment_image(
+							 $attachment_id, apply_filters( 'single_product_small_thumbnail_size', 'shop_single' ), 0, $attr = array(
+								 'title'                   => $image_title,
+								 'alt'                     => $image_title,
+								 'data-caption'            => get_post_field( 'post_excerpt', $post_thumbnail_id ),
+								 'data-src'                => $full_size_image[0],
+								 'data-large_image'        => $full_size_image[0],
+								 'data-large_image_width'  => $full_size_image[1],
+								 'data-large_image_height' => $full_size_image[2],
+							 )
+							);
 
 						if ( has_post_thumbnail() ) {
 							$html  = '<div data-thumb="' . get_the_post_thumbnail_url( $attachment_id, 'shop_thumbnail' ) . '" class="woocommerce-product-gallery__image"><a href="' . esc_url( $full_size_image[0] ) . '">';
@@ -105,8 +109,6 @@ $loop = 0;
 				}
 
 				echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', $html, get_post_thumbnail_id( $post->ID ) );
-
-				do_action( 'woocommerce_product_thumbnails' );
 				?>
 			</figure>
 		<?php

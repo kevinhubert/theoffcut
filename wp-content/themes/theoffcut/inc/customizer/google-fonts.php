@@ -7,7 +7,7 @@ if ( ! function_exists( 'atik_get_google_fonts' ) ) :
 /**
  * Return an array of all available Google Fonts.
  *
- * Updated: 2018-02-09T14:00:42+00:00.
+ * Updated: 2018-02-21T05:17:41+00:00.
  *
  * Total 853 Fonts.
  *
