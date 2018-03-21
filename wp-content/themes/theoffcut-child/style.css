@@ -107,17 +107,21 @@ Template: TheOffcut
 
 .header-image-title {
   font-family: "Josefin Sans";
-  font-size: 5rem;
+  font-size: 3rem;
   text-transform: uppercase;
   font-weight: 900;
   text-align: center;
   margin-bottom: 0 !important;
   text-shadow: 1px 1px 3px #2d3138; }
 
+@media (min-width: 1200px) {
+  .header-image-title {
+    font-size: 5rem; } }
+
 .header-image-description {
   font-family: "Josefin Sans";
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: 100;
   letter-spacing: 5px;
@@ -136,11 +140,23 @@ Template: TheOffcut
   font-family: "Josefin Sans";
   margin-right: 0;
   font-weight: 900;
-  font-size: 4rem;
+  font-size: 2.5rem;
   line-height: 14px;
   margin-bottom: 10px; }
 
+@media (min-width: 992px) {
+  .site-title {
+    font-size: 4rem; } }
+
 .site-description {
-  font-size: 2rem;
+  color: #A4201B;
+  font-size: 1.5rem;
   letter-spacing: 6px;
   font-weight: 100; }
+
+@media (min-width: 992px) {
+  .site-description {
+    font-size: 2rem; } }
+
+.site-title:hover + .side-description {
+  transform: rotate(-5deg); }

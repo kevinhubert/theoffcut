@@ -67,21 +67,25 @@
 }
 .header-image-title {
     font-family: $font-secondary;
-    font-size: 5rem;
+    font-size: 3rem;
     text-transform: uppercase;
     font-weight: 900;
     text-align: center;
     margin-bottom: 0!important;
     text-shadow: 1px 1px 3px $color-brand-primary-soft;
+    @include screen-size('large') {
+        font-size: 5rem;
+    }
 }
 .header-image-description {
     font-family: $font-secondary;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     font-weight:100;
     letter-spacing: 5px;
     text-shadow: 1px 1px 1px $color-brand-primary-soft;
+    @include screen-size('large');
 }
 // Bigass header images
 #wp-custom-header {

@@ -8,12 +8,25 @@
     font-family: $font-secondary;
     margin-right: 0;
     font-weight: 900;
-    font-size: 4rem;
+    font-size: 2.5rem;
     line-height: 14px;
     margin-bottom: 10px;
+    @include screen-size('medium') {
+        font-size: 4rem;
+    }
 }
 .site-description {
-    font-size: 2rem;
+    color: $color-brand-callout;
+    font-size: 1.5rem;
     letter-spacing: 6px;
     font-weight: 100;
+    @include screen-size('medium') {
+        font-size: 2rem;
+    }
+}
+
+.site-title:hover {
+    + .side-description {
+        transform: rotate(-5deg);
+    }
 }
