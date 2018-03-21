@@ -35,3 +35,89 @@ Template: TheOffcut
     color: blue;
   }
 */
+.l-banner {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-size: cover;
+  background-position: center center;
+  font-family: 'lato'; }
+
+.l-banner__text {
+  color: #ffffff;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  text-transform: uppercase;
+  transform: translate(-50%, -50%);
+  z-index: 1; }
+
+@media (min-width: 992px) {
+  .l-banner__text {
+    max-width: 700px; } }
+
+.l-banner__text--title {
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem; }
+
+@media (min-width: 992px) {
+  .l-banner__text--title {
+    font-size: 4rem;
+    line-height: 4rem; } }
+
+.l-banner__text--subtitle {
+  font-size: 1.5rem;
+  font-weight: 100; }
+
+@media (min-width: 992px) {
+  .l-banner__text--subtitle {
+    font-size: 1.5rem; } }
+
+.custom-header-box-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: none;
+  background: rgba(0, 0, 0, 0.15); }
+
+.custom-header-box-wrapper > .container {
+  position: static; }
+
+.custom-header-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: none;
+  color: #ffffff;
+  padding: 0;
+  width: 100%; }
+
+.header-image-title {
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 0 !important;
+  text-shadow: 1px 1px 3px #2d3138; }
+
+.header-image-description {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 5px;
+  text-shadow: 1px 1px 1px #2d3138; }
+
+#wp-custom-header img {
+  min-width: 100%; }

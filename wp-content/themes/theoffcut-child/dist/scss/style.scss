@@ -2,7 +2,7 @@
 @import '_dependencies/childthemerequired';
 
 @import '_dependencies/breakpoints';
-// @import '_base/variables';
+@import '_base/variables';
 
 
 // // OVERRIDES
@@ -12,7 +12,7 @@
 // @import '_base/helpers';
 
 // // LAYOUT
-// @import '_layout/l-banner';
+@import '_layout/custom-header';
 // @import '_layout/l-header';
 // @import '_layout/l-navigation';
 

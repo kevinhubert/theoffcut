@@ -40,3 +40,48 @@
         }
     }
 }
+.custom-header-box-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    background: rgba(0,0,0, .15);
+    > .container {
+        position: static;
+    }
+}
+.custom-header-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: none;
+    color: $color-brand-secondary;
+    padding: 0;
+    width: 100%;
+}
+.header-image-title {
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 0!important;
+    text-shadow: 1px 1px 3px $color-brand-primary-soft;
+}
+.header-image-description {
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight:100;
+    letter-spacing: 5px;
+    text-shadow: 1px 1px 1px $color-brand-primary-soft;
+}
+// Bigass header images
+#wp-custom-header {
+    img {
+        min-width: 100%;
+    }
+}
