@@ -1,0 +1,19 @@
+.site-title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.site-title {
+    font-family: $font-secondary;
+    margin-right: 0;
+    font-weight: 900;
+    font-size: 4rem;
+    line-height: 14px;
+    margin-bottom: 10px;
+}
+.site-description {
+    font-size: 2rem;
+    letter-spacing: 6px;
+    font-weight: 100;
+}

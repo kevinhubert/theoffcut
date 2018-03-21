@@ -10,6 +10,7 @@
 
 // // BASE
 // @import '_base/helpers';
+@import '_base/typography';
 
 // // LAYOUT
 @import '_layout/custom-header';
@@ -17,6 +18,7 @@
 // @import '_layout/l-navigation';
 
 // // COMPONENT
+@import '_component/logo';
 // @import '_component/full-image';
 // @import '_component/text-callout';
 

@@ -53,6 +53,7 @@
     }
 }
 .custom-header-box {
+    
     position: absolute;
     top: 50%;
     left: 50%;
@@ -62,8 +63,10 @@
     color: $color-brand-secondary;
     padding: 0;
     width: 100%;
+    box-shadow: none;
 }
 .header-image-title {
+    font-family: $font-secondary;
     font-size: 5rem;
     text-transform: uppercase;
     font-weight: 900;
@@ -72,6 +75,7 @@
     text-shadow: 1px 1px 3px $color-brand-primary-soft;
 }
 .header-image-description {
+    font-family: $font-secondary;
     text-align: center;
     font-size: 2rem;
     text-transform: uppercase;
