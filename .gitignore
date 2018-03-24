@@ -3,6 +3,7 @@
 !wp-content/
 !package.json
 !gulpfile.js
+!google528e06d5f90ef963.html
 
 # ignore all files starting with .
 .*
