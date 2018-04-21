@@ -5,7 +5,7 @@ Description: Child theme for customizing Atik.
 Version: 1.0
 Author: Codestag
 Author URI: https://codestag.com/
-Template: theoffcut
+Template: TheOffcut
 */
 /* Required Wordpress Classes, don't remove these.
 -----------------------------------------------------------*/
@@ -46,40 +46,34 @@ Template: theoffcut
   background-size: cover;
   background-position: center center;
   font-family: 'lato'; }
-
-.l-banner__text {
-  color: #ffffff;
-  text-align: center;
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  text-transform: uppercase;
-  transform: translate(-50%, -50%);
-  z-index: 1; }
-
-@media (min-width: 992px) {
   .l-banner__text {
-    max-width: 700px; } }
-
-.l-banner__text--title {
-  font-size: 2rem;
-  line-height: 2rem;
-  font-weight: 700;
-  margin-bottom: 1rem; }
-
-@media (min-width: 992px) {
-  .l-banner__text--title {
-    font-size: 4rem;
-    line-height: 4rem; } }
-
-.l-banner__text--subtitle {
-  font-size: 1.5rem;
-  font-weight: 100; }
-
-@media (min-width: 992px) {
-  .l-banner__text--subtitle {
-    font-size: 1.5rem; } }
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    text-transform: uppercase;
+    transform: translate(-50%, -50%);
+    z-index: 1; }
+    @media (min-width: 992px) {
+      .l-banner__text {
+        max-width: 700px; } }
+    .l-banner__text--title {
+      font-size: 2rem;
+      line-height: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem; }
+      @media (min-width: 992px) {
+        .l-banner__text--title {
+          font-size: 4rem;
+          line-height: 4rem; } }
+    .l-banner__text--subtitle {
+      font-size: 1.5rem;
+      font-weight: 100; }
+      @media (min-width: 992px) {
+        .l-banner__text--subtitle {
+          font-size: 1.5rem; } }
 
 .custom-header-box-wrapper {
   position: absolute;
@@ -89,9 +83,8 @@ Template: theoffcut
   left: 0;
   transform: none;
   background: rgba(0, 0, 0, 0.15); }
-
-.custom-header-box-wrapper > .container {
-  position: static; }
+  .custom-header-box-wrapper > .container {
+    position: static; }
 
 .custom-header-box {
   position: absolute;
@@ -113,10 +106,9 @@ Template: theoffcut
   text-align: center;
   margin-bottom: 0 !important;
   text-shadow: 1px 1px 3px #2d3138; }
-
-@media (min-width: 1200px) {
-  .header-image-title {
-    font-size: 5rem; } }
+  @media (min-width: 1200px) {
+    .header-image-title {
+      font-size: 5rem; } }
 
 .header-image-description {
   font-family: "Josefin Sans";
@@ -143,20 +135,41 @@ Template: theoffcut
   font-size: 2.5rem;
   line-height: 14px;
   margin-bottom: 10px; }
-
-@media (min-width: 992px) {
-  .site-title {
-    font-size: 4rem; } }
+  @media (min-width: 992px) {
+    .site-title {
+      font-size: 4rem; } }
 
 .site-description {
   color: #A4201B;
   font-size: 1.5rem;
   letter-spacing: 6px;
   font-weight: 300; }
-
-@media (min-width: 992px) {
-  .site-description {
-    font-size: 2rem; } }
+  @media (min-width: 992px) {
+    .site-description {
+      font-size: 2rem; } }
 
 .site-title:hover + .side-description {
   transform: rotate(-5deg); }
+
+@media (min-width: 992px) {
+  .main-header {
+    position: relative;
+    overflow: hidden; } }
+
+.free-shipping {
+  display: none; }
+  @media (min-width: 992px) {
+    .free-shipping {
+      display: block;
+      text-align: center;
+      font-family: "Josefin Sans";
+      background: #285c8f;
+      color: #ffffff;
+      position: relative;
+      top: 26px;
+      z-index: 1;
+      position: absolute;
+      right: -100px;
+      top: 35px;
+      transform: rotate(18deg);
+      padding: 0 100px; } }

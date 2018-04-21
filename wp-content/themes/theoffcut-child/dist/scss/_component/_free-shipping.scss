@@ -1,0 +1,24 @@
+.main-header {
+    @include screen-size('medium') {
+        position: relative;
+        overflow: hidden;
+    }
+}
+.free-shipping {
+    display: none;
+    @include screen-size('medium') {
+        display: block;
+        text-align: center;
+        font-family: "Josefin Sans";
+        background: $color-brand-callout-secondary;
+        color: $color-brand-secondary;
+        position:relative;
+        top: 26px;
+        z-index: 1;
+        position: absolute;
+        right: -100px;
+        top: 35px;
+        transform: rotate(18deg);
+        padding: 0 100px;
+    }
+} 

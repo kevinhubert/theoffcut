@@ -21,7 +21,7 @@ gulp.task('serve', ['sass'], function() {
 gulp.task('sass', function() {
     return gulp.src("wp-content/themes/theoffcut-child/dist/scss/*.scss")
         .pipe(sass())
-        .pipe(sass().on('error', sass.logError))
+        // .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest("wp-content/themes/theoffcut-child"))
         .pipe(browserSync.stream());
 });
